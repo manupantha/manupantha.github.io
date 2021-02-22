@@ -7,6 +7,24 @@
         .main {
         text-align: center;
         }
+         table, th, td{
+       width:300px;
+       height:45px;
+       color:#191970;
+       border: 1px solid #191970;
+       }
+       a{
+       color:blue;
+       text-decoration:none;
+       }
+      a:hover{
+      color:red;
+      }
+
+      td:hover{
+      background-color:#FFD700;
+      }
+
     </style>
 </head>
 <body>
@@ -22,8 +40,39 @@ id="profileImage">
 <p id="bio"></p>
 <h5 id="followersInformation"></h5>
     <p> Check me on <a id="githubLink" >Github</a></p>
-    <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/PanthaManu?ref_src=twsrc%5Etfw">Tweets by PanthaManu</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div id="tab">
+   <table align="center">
+    <h2 style="color:#191970;"><u>My Projects:</u></h2>
+  <thead>
+  <tr style="background-color:#87cefa">
+      <th><h3>Projects</h3></th>
+      <th id="link1"><h3>Link</h3></th>
+  </tr>
+   </thead>
+   <tbody>
+ <tr>
+    <td>Lms</td>
+    <td><a href="https://github.com/manupantha/Lms">link</a></td>
+  </tr>
+      <tr>
+    <td>library</td>
+    <td><a href="https://github.com/manupantha/library">link</a></td>
+  </tr>
+      <tr>
+    <td>Iw</td>
+    <td><a href="https://github.com/manupantha/Iw">link</a></td>
+                <tr>
+    <td>FinalProduct</td>
+    <td><a href="https://github.com/manupantha/FinalProduct">link</a></td>
+  </tr>
+         <tr>
+    <td>LibraryProject</td>
+    <td><a href="https://github.com/manupantha/LibraryProject">link</a></td>
+  </tr>
+  </tr>
+   </tbody>
+</table>
+</div>
 </div>
 <script>
     fetch("https://api.github.com/users/manupantha")
